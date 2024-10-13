@@ -25,6 +25,9 @@ pushd "$install_dir/appgenerator" > /dev/null
 {
     _update_venv
     ynh_exec_as_app venv/bin/pip install -r requirements.txt > /dev/null
+    pushd static > /dev/null
+    bash ./fetch_assets
+    popd > /dev/null
 }
 popd > /dev/null
 
