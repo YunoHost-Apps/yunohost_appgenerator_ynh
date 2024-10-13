@@ -29,7 +29,7 @@ chown -R "$app:www-data" "$install_dir"
 #=================================================
 ynh_script_progression "Upgrading app..." --weight=5
 
-pushd "$install_dir/apps_tools" > /dev/null
+pushd "$install_dir/appgenerator" > /dev/null
 {
     _update_venv
     ynh_exec_as_app venv/bin/pip install -r requirements.txt > /dev/null
