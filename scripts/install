@@ -21,7 +21,9 @@ chown -R "$app:www-data" "$install_dir"
 #=================================================
 ynh_script_progression "Installing app..."
 
+pushd "$install_dir" > /dev/null
 _update_venv
+popd > /dev/null
 
 pushd "$install_dir/appgenerator" > /dev/null
 {
