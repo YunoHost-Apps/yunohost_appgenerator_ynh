@@ -28,11 +28,14 @@ popd > /dev/null
 pushd "$install_dir/appgenerator" > /dev/null
 {
     ynh_exec_as_app "$install_dir/venv/bin/pip" install -r requirements.txt > /dev/null
+    ynh_exec_as_app "$install_dir/venv/bin/pip" install gunicorn > /dev/null
     pushd static > /dev/null
     bash ./fetch_assets
     popd > /dev/null
 }
 popd > /dev/null
+
+ynh_config_add --template="gunicorn.py" --destination="$install_dir/gunicorn.py"
 
 #=================================================
 # SYSTEM CONFIGURATION
