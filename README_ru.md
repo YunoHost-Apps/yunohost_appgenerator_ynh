@@ -3,20 +3,20 @@
 Он НЕ ДОЛЖЕН редактироваться вручную.
 -->
 
-# YunoHost App Generator для YunoHost
+# App Generator для YunoHost
 
 [![Уровень интеграции](https://dash.yunohost.org/integration/appgenerator.svg)](https://ci-apps.yunohost.org/ci/apps/appgenerator/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/appgenerator.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/appgenerator.maintain.svg)
 
-[![Установите YunoHost App Generator с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=appgenerator)
+[![Установите App Generator с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=appgenerator)
 
 *[Прочтите этот README на других языках.](./ALL_README.md)*
 
-> *Этот пакет позволяет Вам установить YunoHost App Generator быстро и просто на YunoHost-сервер.*  
+> *Этот пакет позволяет Вам установить App Generator быстро и просто на YunoHost-сервер.*  
 > *Если у Вас нет YunoHost, пожалуйста, посмотрите [инструкцию](https://yunohost.org/install), чтобы узнать, как установить его.*
 
 ## Обзор
 
-Generate YunoHost packages from a web interface
+Generate YunoHost packages from a Web interface.
 
 
 **Поставляемая версия:** 0.12~ynh1

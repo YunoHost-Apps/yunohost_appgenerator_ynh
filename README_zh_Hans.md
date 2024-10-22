@@ -3,20 +3,20 @@
 请勿手动编辑。
 -->
 
-# YunoHost 上的 YunoHost App Generator
+# YunoHost 上的 App Generator
 
 [![集成程度](https://dash.yunohost.org/integration/appgenerator.svg)](https://ci-apps.yunohost.org/ci/apps/appgenerator/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/appgenerator.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/appgenerator.maintain.svg)
 
-[![使用 YunoHost 安装 YunoHost App Generator](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=appgenerator)
+[![使用 YunoHost 安装 App Generator](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=appgenerator)
 
 *[阅读此 README 的其它语言版本。](./ALL_README.md)*
 
-> *通过此软件包，您可以在 YunoHost 服务器上快速、简单地安装 YunoHost App Generator。*  
+> *通过此软件包，您可以在 YunoHost 服务器上快速、简单地安装 App Generator。*  
 > *如果您还没有 YunoHost，请参阅[指南](https://yunohost.org/install)了解如何安装它。*
 
 ## 概况
 
-Generate YunoHost packages from a web interface
+Generate YunoHost packages from a Web interface.
 
 
 **分发版本：** 0.12~ynh1
