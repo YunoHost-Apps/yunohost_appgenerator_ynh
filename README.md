@@ -19,7 +19,7 @@ It shall NOT be edited by hand.
 Generate YunoHost packages from a web interface
 
 
-**Shipped version:** 1.0~ynh1
+**Shipped version:** 0.12~ynh1
 
 **Demo:** <https://appgenerator.yunohost.org>
 ## Documentation and resources
