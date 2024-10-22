@@ -5,7 +5,7 @@ packaging_format = 2
 id = "appgenerator"
 name = "App Generator"
 
-description.en = "Generate YunoHost packages from a web interface"
+description.en = "Generate YunoHost packages from a Web interface"
 description.fr = "Générez des paquets YunoHost depuis une interface Web"
 
 version = "0.12~ynh1"
