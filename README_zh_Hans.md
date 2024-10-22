@@ -19,7 +19,7 @@
 Generate YunoHost packages from a web interface
 
 
-**分发版本：** 1.0~ynh1
+**分发版本：** 0.12~ynh1
 
 **演示：** <https://appgenerator.yunohost.org>
 ## 文档与资源
