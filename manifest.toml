@@ -3,7 +3,7 @@
 packaging_format = 2
 
 id = "appgenerator"
-name = "YunoHost App Generator"
+name = "App Generator"
 
 description.en = "Generate YunoHost packages from a web interface"
 description.fr = "Générez des paquets YunoHost depuis une interface Web"

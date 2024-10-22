@@ -1,0 +1,1 @@
+Générer des packages YunoHost à partir d'une interface Web.
