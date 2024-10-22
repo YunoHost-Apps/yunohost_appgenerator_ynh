@@ -1,9 +1,4 @@
 #!/bin/bash
-#!/bin/bash
-
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
 
 source _common.sh
 source /usr/share/yunohost/helpers
@@ -27,7 +22,7 @@ chown -R "$app:www-data" "$install_dir"
 #=================================================
 # INSTALL APP
 #=================================================
-ynh_script_progression "Upgrading app..." --weight=5
+ynh_script_progression "Upgrading app..."
 
 pushd "$install_dir" > /dev/null
 _update_venv

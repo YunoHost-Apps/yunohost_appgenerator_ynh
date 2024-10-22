@@ -6,7 +6,7 @@ id = "appgenerator"
 name = "YunoHost App Generator"
 
 description.en = "Generate YunoHost packages from a web interface"
-description.fr = "Générez des paquets YunoHost depuis une interface web"
+description.fr = "Générez des paquets YunoHost depuis une interface Web"
 
 version = "1.0~ynh1"
 
@@ -16,11 +16,10 @@ maintainers = ["salamandar"]
 license = "AGPL-3.0"
 website = "https://appgenerator.yunohost.org"
 demo = "https://appgenerator.yunohost.org"
-
 code = "https://github.com/YunoHost/appgenerator"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.30"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -47,6 +46,7 @@ ram.runtime = "50M"
     [resources.system_user]
 
     [resources.install_dir]
+    group = "www-data:r-x"
 
     [resources.permissions]
     main.url = "/"
