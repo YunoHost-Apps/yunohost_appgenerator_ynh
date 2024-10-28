@@ -17,19 +17,16 @@ chown -R "$app:www-data" "$install_dir"
 #=================================================
 ynh_script_progression "Installing app..."
 
-pushd "$install_dir" > /dev/null
-_update_venv
-popd > /dev/null
+pushd "$install_dir"
+    _update_venv
+popd
 
-pushd "$install_dir/appgenerator" > /dev/null
-{
-    ynh_exec_as_app "$install_dir/venv/bin/pip" install -r requirements.txt > /dev/null
-    ynh_exec_as_app "$install_dir/venv/bin/pip" install gunicorn > /dev/null
-    pushd static > /dev/null
+pushd "$install_dir/appgenerator"
+    ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install -r requirements.txt
+    ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install gunicorn
+    ynh_hide_warnings pushd static
     bash ./fetch_assets
-    popd > /dev/null
-}
-popd > /dev/null
+popd
 
 ynh_config_add --template="gunicorn.py" --destination="$install_dir/gunicorn.py"
 
