@@ -19,7 +19,7 @@ demo = "https://appgenerator.yunohost.org"
 code = "https://github.com/YunoHost/appgenerator"
 
 [integration]
-yunohost = ">= 11.3.0"
+yunohost = ">= 11.2.30"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
