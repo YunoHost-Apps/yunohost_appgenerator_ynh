@@ -12,8 +12,8 @@ ExecStart=__INSTALL_DIR__/venv/bin/gunicorn -c __INSTALL_DIR__/gunicorn.py app:a
 PIDFile=/run/gunicorn/appgenerator-pid
 ExecReload=/bin/kill -s HUP $MAINPID
 ExecStop=/bin/kill -s TERM $MAINPID
-StandardOutput=append:/var/log/__APP__/__APP__.log
-StandardError=inherit
+#StandardOutput=append:/var/log/__APP__/__APP__.log
+#StandardError=inherit
 Restart=on-failure
 RestartSec=10
 
