@@ -25,7 +25,7 @@ pushd "$install_dir/appgenerator"
     ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install -r requirements.txt
     ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install gunicorn
     ynh_hide_warnings pushd static
-    bash ./fetch_assets
+    ynh_hide_warnings bash ./fetch_assets
 popd
 
 ynh_config_add --template="gunicorn.py" --destination="$install_dir/gunicorn.py"
