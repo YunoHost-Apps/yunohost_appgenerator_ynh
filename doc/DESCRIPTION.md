@@ -1,1 +1,1 @@
-Generate YunoHost packages from a web interface
+Generate YunoHost packages from a Web interface.

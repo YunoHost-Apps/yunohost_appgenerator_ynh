@@ -3,23 +3,25 @@ NOTA: Este README foi creado automáticamente por <https://github.com/YunoHost/a
 NON debe editarse manualmente.
 -->
 
-# YunoHost App Generator para YunoHost
+# App Generator para YunoHost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/appgenerator.svg)](https://ci-apps.yunohost.org/ci/apps/appgenerator/) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/appgenerator.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/appgenerator.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/appgenerator)](https://ci-apps.yunohost.org/ci/apps/appgenerator/)
+![Estado de funcionamento](https://apps.yunohost.org/badge/state/appgenerator)
+![Estado de mantemento](https://apps.yunohost.org/badge/maintained/appgenerator)
 
-[![Instalar YunoHost App Generator con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=appgenerator)
+[![Instalar App Generator con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=appgenerator)
 
 *[Le este README en outros idiomas.](./ALL_README.md)*
 
-> *Este paquete permíteche instalar YunoHost App Generator de xeito rápido e doado nun servidor YunoHost.*  
+> *Este paquete permíteche instalar App Generator de xeito rápido e doado nun servidor YunoHost.*  
 > *Se non usas YunoHost, le a [documentación](https://yunohost.org/install) para saber como instalalo.*
 
 ## Vista xeral
 
-Generate YunoHost packages from a web interface
+Generate YunoHost packages from a Web interface.
 
 
-**Versión proporcionada:** 1.0~ynh1
+**Versión proporcionada:** 0.20~ynh1
 
 **Demo:** <https://appgenerator.yunohost.org>
 ## Documentación e recursos

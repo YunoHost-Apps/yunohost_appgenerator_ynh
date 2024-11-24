@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
 
@@ -21,19 +17,16 @@ chown -R "$app:www-data" "$install_dir"
 #=================================================
 ynh_script_progression "Installing app..."
 
-pushd "$install_dir" > /dev/null
-_update_venv
-popd > /dev/null
+pushd "$install_dir"
+    _update_venv
+popd
 
-pushd "$install_dir/appgenerator" > /dev/null
-{
-    ynh_exec_as_app "$install_dir/venv/bin/pip" install -r requirements.txt > /dev/null
-    ynh_exec_as_app "$install_dir/venv/bin/pip" install gunicorn > /dev/null
-    pushd static > /dev/null
-    bash ./fetch_assets
-    popd > /dev/null
-}
-popd > /dev/null
+pushd "$install_dir/appgenerator"
+    ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install -r requirements.txt
+    ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install gunicorn
+    ynh_hide_warnings pushd static
+    ynh_hide_warnings bash ./fetch_assets
+popd
 
 ynh_config_add --template="gunicorn.py" --destination="$install_dir/gunicorn.py"
 
@@ -46,7 +39,7 @@ ynh_config_add_nginx
 
 ynh_config_add_systemd
 
-yunohost service add "$app" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="YunoHost App Generator" --log=/var/log/$app/$app.log 
 
 ynh_config_add_logrotate
 
@@ -55,10 +48,10 @@ ynh_config_add_logrotate
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-# Start a systemd service
 ynh_systemctl --service="$app" --action="start" --log_path="/var/log/$app/$app.log"
 
 #=================================================
 # END OF SCRIPT
 #=================================================
+
 ynh_script_progression "Installation of $app completed"

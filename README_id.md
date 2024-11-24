@@ -3,23 +3,25 @@ N.B.: README ini dibuat secara otomatis oleh <https://github.com/YunoHost/apps/t
 Ini TIDAK boleh diedit dengan tangan.
 -->
 
-# YunoHost App Generator untuk YunoHost
+# App Generator untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/appgenerator.svg)](https://ci-apps.yunohost.org/ci/apps/appgenerator/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/appgenerator.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/appgenerator.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/appgenerator)](https://ci-apps.yunohost.org/ci/apps/appgenerator/)
+![Status kerja](https://apps.yunohost.org/badge/state/appgenerator)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/appgenerator)
 
-[![Pasang YunoHost App Generator dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=appgenerator)
+[![Pasang App Generator dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=appgenerator)
 
 *[Baca README ini dengan bahasa yang lain.](./ALL_README.md)*
 
-> *Paket ini memperbolehkan Anda untuk memasang YunoHost App Generator secara cepat dan mudah pada server YunoHost.*  
+> *Paket ini memperbolehkan Anda untuk memasang App Generator secara cepat dan mudah pada server YunoHost.*  
 > *Bila Anda tidak mempunyai YunoHost, silakan berkonsultasi dengan [panduan](https://yunohost.org/install) untuk mempelajari bagaimana untuk memasangnya.*
 
 ## Ringkasan
 
-Generate YunoHost packages from a web interface
+Generate YunoHost packages from a Web interface.
 
 
-**Versi terkirim:** 1.0~ynh1
+**Versi terkirim:** 0.20~ynh1
 
 **Demo:** <https://appgenerator.yunohost.org>
 ## Dokumentasi dan sumber daya

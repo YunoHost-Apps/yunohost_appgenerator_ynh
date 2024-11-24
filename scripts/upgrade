@@ -1,9 +1,4 @@
 #!/bin/bash
-#!/bin/bash
-
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
 
 source _common.sh
 source /usr/share/yunohost/helpers
@@ -13,7 +8,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Stopping $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="stop"
+ynh_systemctl --service="$app" --action="stop" --log_path="/var/log/$app/$app.log"
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -27,21 +22,18 @@ chown -R "$app:www-data" "$install_dir"
 #=================================================
 # INSTALL APP
 #=================================================
-ynh_script_progression "Upgrading app..." --weight=5
+ynh_script_progression "Upgrading app..."
 
-pushd "$install_dir" > /dev/null
-_update_venv
-popd > /dev/null
+pushd "$install_dir"
+    _update_venv
+popd
 
-pushd "$install_dir/appgenerator" > /dev/null
-{
-    ynh_exec_as_app "$install_dir/venv/bin/pip" install -r requirements.txt > /dev/null
-    ynh_exec_as_app "$install_dir/venv/bin/pip" install gunicorn > /dev/null
-    pushd static > /dev/null
+pushd "$install_dir/appgenerator"
+    ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install -r requirements.txt
+    ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install gunicorn
+    ynh_hide_warnings pushd static
     bash ./fetch_assets
-    popd > /dev/null
-}
-popd > /dev/null
+popd
 
 ynh_config_add --template="gunicorn.py" --destination="$install_dir/gunicorn.py"
 
@@ -54,7 +46,7 @@ ynh_config_add_nginx
 
 ynh_config_add_systemd
 
-yunohost service add "$app" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="YunoHost App Generator" --log=/var/log/$app/$app.log 
 
 ynh_config_add_logrotate
 
@@ -63,7 +55,7 @@ ynh_config_add_logrotate
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="start"
+ynh_systemctl --service="$app" --action="start" --log_path="/var/log/$app/$app.log"
 
 #=================================================
 # END OF SCRIPT
