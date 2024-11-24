@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # App Generator untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/appgenerator.svg)](https://ci-apps.yunohost.org/ci/apps/appgenerator/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/appgenerator.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/appgenerator.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/appgenerator)](https://ci-apps.yunohost.org/ci/apps/appgenerator/)
+![Status kerja](https://apps.yunohost.org/badge/state/appgenerator)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/appgenerator)
 
 [![Pasang App Generator dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=appgenerator)
 
@@ -19,7 +21,7 @@ Ini TIDAK boleh diedit dengan tangan.
 Generate YunoHost packages from a Web interface.
 
 
-**Versi terkirim:** 0.12~ynh1
+**Versi terkirim:** 0.20~ynh1
 
 **Demo:** <https://appgenerator.yunohost.org>
 ## Dokumentasi dan sumber daya
