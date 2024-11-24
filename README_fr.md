@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # YunoHost App Generator pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/appgenerator.svg)](https://ci-apps.yunohost.org/ci/apps/appgenerator/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/appgenerator.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/appgenerator.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/appgenerator)](https://ci-apps.yunohost.org/ci/apps/appgenerator/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/appgenerator)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/appgenerator)
 
 [![Installer YunoHost App Generator avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=appgenerator)
 
@@ -19,7 +21,7 @@ Il NE doit PAS être modifié à la main.
 Generate YunoHost packages from a web interface
 
 
-**Version incluse :** 1.0~ynh1
+**Version incluse :** 0.21~ynh1
 
 **Démo :** <https://appgenerator.yunohost.org>
 ## Documentations et ressources
