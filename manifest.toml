@@ -8,7 +8,7 @@ name = "YunoHost App Generator"
 description.en = "Generate YunoHost packages from a web interface"
 description.fr = "Générez des paquets YunoHost depuis une interface web"
 
-version = "1.0~ynh1"
+version = "0.21~ynh1"
 
 maintainers = ["salamandar"]
 
