@@ -35,7 +35,7 @@ popd > /dev/null
 
 pushd "$install_dir/appgenerator" > /dev/null
 {
-    ynh_exec_as_app "$install_dir/venv/bin/pip" install -r requirements.txt > /dev/null
+    ynh_exec_as_app "$install_dir/venv/bin/pip" install -e . > /dev/null
     ynh_exec_as_app "$install_dir/venv/bin/pip" install gunicorn > /dev/null
     pushd static > /dev/null
     bash ./fetch_assets
