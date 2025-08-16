@@ -21,7 +21,7 @@
 Generate YunoHost packages from a Web interface.
 
 
-**Поставляемая версия:** 0.20~ynh1
+**Поставляемая версия:** 0.21~ynh1
 
 **Демо-версия:** <https://appgenerator.yunohost.org>
 ## Документация и ресурсы

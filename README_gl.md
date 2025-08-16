@@ -21,7 +21,7 @@ NON debe editarse manualmente.
 Generate YunoHost packages from a Web interface.
 
 
-**Versión proporcionada:** 0.20~ynh1
+**Versión proporcionada:** 0.21~ynh1
 
 **Demo:** <https://appgenerator.yunohost.org>
 ## Documentación e recursos

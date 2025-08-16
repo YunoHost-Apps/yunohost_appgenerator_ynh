@@ -21,7 +21,7 @@ Ini TIDAK boleh diedit dengan tangan.
 Generate YunoHost packages from a Web interface.
 
 
-**Versi terkirim:** 0.20~ynh1
+**Versi terkirim:** 0.21~ynh1
 
 **Demo:** <https://appgenerator.yunohost.org>
 ## Dokumentasi dan sumber daya
