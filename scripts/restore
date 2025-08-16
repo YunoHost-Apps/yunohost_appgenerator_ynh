@@ -25,6 +25,8 @@ yunohost service add "$app" --description="YunoHost App Generator" --log="/var/l
 ynh_restore "/etc/logrotate.d/$app"
 
 ynh_restore "/var/log/$app/"
+chown -R $app:$app "/var/log/$app"
+chmod 755 "/var/log/$app"
 
 #=================================================
 # RELOAD NGINX AND PHP-FPM OR THE APP SERVICE
