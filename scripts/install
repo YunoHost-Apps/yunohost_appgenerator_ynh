@@ -24,6 +24,8 @@ popd
 pushd "$install_dir/appgenerator"
     ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install pdm
     ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install gunicorn
+    ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pdm" config venv.backend venv
+    ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pdm" use -f "$install_dir/venv"
     ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pdm" install
     pushd static
         ynh_hide_warnings bash ./fetch_assets
